@@ -2,7 +2,7 @@
     if T or t < 10:
  """
 
-""" x = "t" or "T"
+x = "t" or "T"
 values = input("enter a sentence: ")
 print(values)
 for x in values:
@@ -12,9 +12,9 @@ print(count)
 y= values.split( )
 z = y[0]
 print(y)
-print(z) """
+print(z)
 
-sentence = input("input a sentence: ")
+""" sentence = input("input a sentence: ")
 words = sentence.split()
 letters= words.split( )
 z = letters[0]
@@ -22,4 +22,4 @@ print(letters)
 count = len(words)
 letter_count = len(letters)
 print(count)
-print(letter_count)
+print(letter_count) """

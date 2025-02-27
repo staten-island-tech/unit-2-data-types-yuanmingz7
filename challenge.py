@@ -41,7 +41,7 @@ else:
         "great": 0.25
     }
 
-    tip = bill * tip_percentages[service_rating.lower()]
+    tip = bill * tip_percentages
     
     total_amount = bill + tip
     
@@ -51,14 +51,11 @@ print(calculate_tip(50, "good")) """
 
 #Create a function that accepts an input and determines all factors of the number. 
 
-def find_factors(number):
+def factors(number):
     factors = []
     
-    for i in range(1, number + 1):
-        if number % i == 0:  
-            factors.append(i)
-    
-    return factors
+number = input("Enter a number: ")
+print(factors)
 
-number = int(input("Enter a number: "))
-print(f"Factors of {number} are: {find_factors(number)}")
+#Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
+
