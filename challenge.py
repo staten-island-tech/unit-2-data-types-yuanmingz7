@@ -51,11 +51,27 @@ print(calculate_tip(50, "good")) """
 
 #Create a function that accepts an input and determines all factors of the number. 
 
-def factors(number):
+""" def factors(number):
     factors = []
     
 number = input("Enter a number: ")
-print(factors)
+print(factors) """
 
 #Create a function that accepts 2 arguments. Find the greatest common factor between those numbers. 
+
+def find_gcf(num1, num2):
+    smaller = min(num1, num2)
+    
+    for i in range(smaller, 0, -1):
+        if num1 % i == 0 and num2 % i == 0:
+            return i  
+    return 1   
+
+num1 = int(input("Enter the first number: ")) 
+num2 = int(input("Enter the second number: ")) 
+
+gcf = find_gcf(num1, num2)
+
+print(f"The gcf is {gcf}.")
+
 
