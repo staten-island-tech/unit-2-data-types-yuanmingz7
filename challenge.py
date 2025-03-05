@@ -62,16 +62,16 @@ print(factors) """
 def find_gcf(num1, num2):
     smaller = min(num1, num2)
     
-    for i in range(smaller, 0, -1):
-        if num1 % i == 0 and num2 % i == 0:
-            return i  
-    return 1   
+    for i in range(smaller, 0, -1): #smaller is the smaller nuumber from the line above
+        if num1 % i == 0 and num2 % i == 0:  #the line basically finds what number has remainder of 0 and adds it to a list, it starts with the bigger number dividied 
+            return i  #smaller number so if num1 is 36, and num2 is 48, i would -= the smaller number first and if it doesnt work it goes down a digit to see if num2 is divisible by i and i starts 
+    return 1          #starts with num1 the smaller number and goes down by a dgit each time if it doesnt work if none work hen it returms 1 as the gcf
 
 num1 = int(input("Enter the first number: ")) 
 num2 = int(input("Enter the second number: ")) 
 
 gcf = find_gcf(num1, num2)
 
-print(f"The gcf is {gcf}.")
+print(f"The gcf is {gcf}")
 
 
